@@ -1,0 +1,59 @@
+Java NIO - Path:-
+==================
+Path is the particular location of an entity such as file or directory in a file system so that
+one can access it at that particular location
+
+
+Path is interface which is used in Java NIO Package
+
+
+Types of Path:-
+---------------
+1) Absolute Path
+2) Relative Path
+
+1) Absolute Path
+----------------
+Absolute path is the location address from the root to the entity where it locates.
+
+2) Relative Path
+----------------
+Relative path is the location address which is relative to some other path.
+
+
+To get instance of path we can use static method of java.nio.file.Paths class get() that 
+convert a path String , or a sequence of String
+
+
+Important Methods:-
+--------------------
+1. getFileName()  --> return the file system that created this object
+2. getName()      --> Return the name element of this Path as a Path object
+3. getNameCount() --> Return the number of name elements in the path
+4. subpath()      --> Return the relative path that is subsequence of the name elements of 
+		      this path
+5. getRoot()      --> Return the root component of this path as a Path object , or null if this
+	  	      path does not have a root component 
+6. toAbsolutePath() -->Return the Path object that represent the absolute path
+7. toFile() -->      Return a file object representing this path
+8. compareTo() -->  Compare two abstract paths lexicographically . This method return zero if 
+		    the argument is equal to this path , a value less than zero if this path 
+		    lexicographically less than argument , or a value greater than zero if this
+		    path is lexicographically greater than the argument
+
+
+===============================================================================================
+
+Java NIO - Selector:-
+====================
+Java NIO Selector is a multiplexer of selectable channels , which is used as a special type of
+channel that can be put into non-blocking mode . It can examine one or more NIO Channels and
+determine which channel os ready for communication i.e reading or writting
+
+Use of Selector:-
+-----------------
+The selector is used for handling the multiple channels using a single thread , therefore it 
+need less thread to handle the channels . Switching between the threads is expensive for OS . 
+Therefore ro improve system efficiency  it is use
+
+Creating 
